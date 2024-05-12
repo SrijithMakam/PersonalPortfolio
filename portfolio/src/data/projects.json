@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Kitky Pickup and Drop System",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["PL-SQL", "RDBMS", "Oracle Sql"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/DMDD-DBDev/DMDD_DBDEVs_Final_Project"
+  },
+  {
+    "title": "GlobeMediWatch",
+    "imageSrc": "projects/mern.png",
+    "description": "Designed and developed a health-focused community website dedicated to organizing medical health camps, which serves public by offering basic health care services",
+    "skills": ["React", "Express", "Node", "MongoDB"],
+    "demo": "https://www.youtube.com/watch?v=kjbP5DjtZv0",
+    "source": "https://github.com/SrijithMakam/globemediwatch/tree/main"
+  },
+  {
+    "title": "Amazon Re-imagined",
+    "imageSrc": "projects/uiux.png",
+    "description": "Enhanced Amazon Shopping experience by incorporating standout features of X through a user-centred design sprint approach, resulting in a 50% increase in overall value for users",
+    "skills": ["Figma", "UI/UX"],
+    "demo": "https://www.youtube.com/watch?v=dFNWgD2U64M",
+    "source": "https://www.figma.com/file/jTTaVPpgiWlG71yxVrrayd/SrijithMakam_Spring24?type=design&node-id=763%3A95&mode=design&t=zJzFsbUXDqjEE7RS-1"
+  }
+]
