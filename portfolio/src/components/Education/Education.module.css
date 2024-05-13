@@ -1,19 +1,17 @@
-/* Education.module.css */
-
 .education {
-    color: var(--color-text); /* Match container text color */
-    margin-top: 20px; /* Match container margin top */
-    margin-left: 10%; /* Match container margin left */
-    margin-right: 10%; /* Match container margin right */
-    background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%); /* Match container background color */
+    color: var(--color-text);
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
     border-radius: 20px;
-    padding: 40px; /* Add padding for spacing */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Add shadow effect */
-    transition: transform 0.3s ease; /* Add transition for smooth animation */
+    padding: 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .education:hover {
-    transform: scale(1.02); /* Apply scale transformation on hover */
+    transform: scale(1.02);
     cursor: pointer;
 }
 
@@ -22,7 +20,7 @@
     font-weight: 700;
     letter-spacing: 1.75px;
     text-transform: uppercase;
-    color: var(--color-text); 
+    color: var(--color-text);
     margin-bottom: 5px;
     margin-left: 10%;
     margin-top: 79px;
@@ -33,13 +31,23 @@
     flex-direction: column;
 }
 
+.flexContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 50px;
+}
+
 .degree {
     font-size: 25px;
     font-weight: bold;
 }
 
 .university {
-    margin-bottom: 5px;
     font-size: 22px;
     font-style: italic;
 }
@@ -53,26 +61,4 @@
 .coursework {
     font-size: 23px;
     margin-top: 25px;
-}
-
-@media screen and (max-width: 830px) {
-    .education {
-        padding: 30px; /* Adjust padding for smaller screens */
-        margin-top: 0; /* Remove margin top on smaller screens */
-        margin-left: 0; /* Remove margin left on smaller screens */
-        margin-right: 0; /* Remove margin right on smaller screens */
-    }
-
-    .heading {
-        font-size: 30px; /* Adjust title font size for smaller screens */
-        margin-bottom: 10px; /* Adjust margin bottom for smaller screens */
-    }
-
-    .degree {
-        font-size: 25px; /* Adjust degree font size for smaller screens */
-    }
-
-    .university {
-        font-size: 25px; /* Adjust university font size for smaller screens */
-    }
 }
