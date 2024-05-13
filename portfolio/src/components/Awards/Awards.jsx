@@ -8,7 +8,7 @@ import ace from "../../../assets/history/ace.jpeg"
 export const Awards = () => {
   return (
     <>
-      <h2 className={styles.title}>Certifications and Recognitions</h2>
+      <h2 className={styles.title} id="Awards">Certifications and Recognitions</h2>
       <div className={styles.certificationContainer}>
         <div className={styles.certificationItem}>
           <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>

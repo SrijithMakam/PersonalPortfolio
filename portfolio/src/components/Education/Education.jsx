@@ -6,7 +6,7 @@ import sit from "../../../assets/about/sit.png";
 export const Education = () => {
   return (
     <>
-      <h2 className={styles.heading}>EDUCATION</h2>
+      <h2 className={styles.heading} id="Education">EDUCATION</h2>
       <div className={styles.education}>
         <div className={styles.educationInfo}>
           <div className={styles.flexContainer}>

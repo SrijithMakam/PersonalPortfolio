@@ -14,7 +14,9 @@ the software industry. Proficient in building, configuring, and testing software
 with a relentless pursuit of continuous learning and excellent communication skills. Eager for dynamic
 opportunities in software development, driven by a passion for technology and fortified organizational skills.
         </p>
-
+        <a href="https://drive.google.com/file/d/1bJvUxugzWfJv20QbHlgjPzrgG2ObetG8/view" className={styles.contactBtn}>
+          Resume
+        </a>
       </div>
       <img
         src={getImageUrl("hero/IMG_4401.jpg")}
