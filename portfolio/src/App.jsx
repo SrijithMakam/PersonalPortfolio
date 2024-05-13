@@ -6,6 +6,7 @@ import { Hero } from "./components/Hero/Hero";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Projects } from "./components/Projects/Projects";
 import { Education } from "./components/Education/Education";
+import { Awards } from "./components/Awards/Awards"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Education/> 
       <Experience />
       <Projects />
+      <Awards/>
       <Contact />
     </div>
   );

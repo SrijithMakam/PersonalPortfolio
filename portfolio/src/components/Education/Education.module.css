@@ -5,7 +5,7 @@
     margin-top: 20px; /* Match container margin top */
     margin-left: 10%; /* Match container margin left */
     margin-right: 10%; /* Match container margin right */
-    background-color: var(--color-secondary); /* Match container background color */
+    background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%); /* Match container background color */
     border-radius: 20px;
     padding: 40px; /* Add padding for spacing */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Add shadow effect */
