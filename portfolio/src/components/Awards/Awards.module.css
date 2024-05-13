@@ -4,7 +4,7 @@
     margin-top: 20px;
     margin-left: 10%;
     margin-right: 10%;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /* Change flex-wrap to wrap for responsiveness */
 }
 
 .certificationItem {
@@ -50,4 +50,28 @@
     width: 110%;
     border-radius: 20px;
     padding: 30px;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .certificationContainer {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .certificationItem {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .certificationContainer {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .certificationItem {
+        width: calc(100% - 20px);
+    }
 }
