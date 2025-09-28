@@ -1,9 +1,25 @@
 [
   {
+    "title": "AWS Cloud-Native Web App",
+    "imageSrc": "projects/aws.png",
+    "description": "Developed a secure back-end NodeJS user registration system with token-based authentication. Utilized Terraform to automate AWS infrastructure (S3, RDS, EC2, KMS, CloudWatch, ACM, Route53, Lambda).",
+    "skills": ["AWS", "NodeJS", "MySQL", "Terraform", "Packer", "CI/CD"],
+    "demo": "https://github.com/SrijithMakam/webapp",
+    "source": "https://github.com/SrijithMakam/tf-aws-infra"
+  },
+  {
+    "title": "Customer Support System",
+    "imageSrc": "projects/chatbot.png",
+    "description": "Architected a hybrid multi-agent AI customer support chatbot in Python, integrating RAG search and LLM-based intent classification to provide scalable and efficient automation.",
+    "skills": ["Python", "LangChain", "LLM", "NLP", "Agentic AI"],
+    "demo": "https://github.com/SrijithMakam/Agenti-AI-customer-support-system",
+    "source": "https://github.com/SrijithMakam/Agenti-AI-customer-support-system"
+  },
+  {
     "title": "GlobeMediWatch",
-    "imageSrc": "projects/mern.png",
-    "description": "Designed and developed a health-focused community website dedicated to organizing medical health camps, which serves public by offering basic health care services.",
-    "skills": ["React", "Express", "Node", "MongoDB"],
+    "imageSrc": "projects/GlobeMediWatch_logo.jpeg",
+    "description": "Engineered a MERN stack application with robust backend system utilizing RESTful APIs and enhanced CRUD operations.",
+    "skills": ["React", "Express.js", "MongoDB", "Node.js"],
     "demo": "https://www.youtube.com/watch?v=kjbP5DjtZv0",
     "source": "https://github.com/SrijithMakam/globemediwatch/tree/main"
   },

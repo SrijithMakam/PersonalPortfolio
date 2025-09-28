@@ -1,16 +1,43 @@
 [
   {
-    "role": "Software Engineer",
+    "role": "Software Development Engineer",
+    "organisation": "XR Extreme Reach",
+    "startDate": "Jan, 2025",
+    "endDate": "May, 2025",
+    "experiences": [
+      "Engineered and deployed scalable .NET and Angular features for a high-volume order entry system, reducing overall page loading time by 40%",
+      "Developed and optimized C# RESTful APIs to expose new backend functionality, reducing API execution time by 15%",
+      "Optimized backend performance by 30% by refactoring legacy LINQ code to leverage ServiceStacks OrmLite",
+      "Increased MS unit test code coverage by 36% and automated end-to-end UI testing with Cypress"
+    ],
+    "imageSrc": "history/XR.jpeg"
+  },
+  {
+    "role": "DevOps Engineer",
+    "organisation": "Accenture",
+    "startDate": "Dec, 2021",
+    "endDate": "Jul, 2023",
+    "experiences": [
+      "Spearheaded transformation initiatives, implementing Azure Logic Apps to automate daily monitoring and alert systems, reducing monitoring incidents by 30%",
+      "Automated manual database refreshes using Azure DevOps pipelines, reducing downtime and saving 2 hours of manual work per refresh",
+      "Streamlined post-deployment validation protocols, reducing critical production incidents by 40%",
+      "Led team of 3, conducting root cause analysis for application performance using Dynatrace and Azure logs, improving application performance by 35%",
+      "Mentored new developers by conducting over 50 code reviews and creating comprehensive onboarding resources"
+    ],
+    "imageSrc": "history/accenture.png"
+  },
+  {
+    "role": "Associate Software Engineer",
     "organisation": "Accenture",
     "startDate": "Nov, 2020",
-    "endDate": "Jul, 2023",
-    "experiences": ["Build, configure and test packaged software & Software as a Service (SaaS) products.", 
-    "Develop and test new components or enhancements.",
-    "Use declarative features to develop functionality where applicable.", 
-    "Provide primary support for application releases into production, including deployment plan and schedule."],
+    "endDate": "Dec, 2021",
+    "experiences": [
+      "Refactored legacy code into reusable components and implemented NgRx for predictable state management, reducing UI latency by 18%",
+      "Authored deployment plans and orchestrated production rollouts, achieving 100% compliance with scheduled timelines",
+      "Configured and tested packaged software updates, supporting 2 weekly release cycles with zero downtime"
+    ],
     "imageSrc": "history/accenture.png"
-
-    }
+  }
 ]
   
 

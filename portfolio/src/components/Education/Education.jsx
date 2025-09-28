@@ -5,8 +5,8 @@ import sit from "../../../assets/about/sit.png";
 
 export const Education = () => {
   return (
-    <>
-      <h2 className={styles.heading} id="Education">EDUCATION</h2>
+    <section className={styles.container} id="education">
+      <h2 className={styles.title}>Education</h2>
       <div className={styles.education}>
         <div className={styles.educationInfo}>
           <div className={styles.flexContainer}>
@@ -25,14 +25,14 @@ export const Education = () => {
           </div>
           <span className={styles.gpa}>
             <br />
-            Expected: April 2025
+            Expected: Dec 2025
             <br />
-            GPA: 3.92
+            GPA: 3.9
           </span>
           <p className={styles.coursework}>
-            <strong>Coursework:</strong> Object Oriented Design, Program Structures
-            and Algorithms, Web Design and User Experience Testing, Data Management and
-            Database Design, Network Structures and Cloud Computing, User Experience Design and Testing
+            <strong>Coursework:</strong> 
+            <br />Object Oriented Design, Design Patterns, Data structures and Algorithms, Web Design and UI/UX,
+            Data Management and Database Design, <br />Network structures and Cloud Computing, Agentic AI
           </p>
         </div>
       </div>
@@ -59,10 +59,11 @@ export const Education = () => {
             GPA: 3.62
           </span>
           <p className={styles.coursework}>
-            <strong>Relavent Coursework:</strong> Project Management, Object Oriented Programming, Computer Aided Design and analysis
+            <strong>Relavent Coursework:</strong> 
+            <br />Project Management, Object Oriented Programming, Computer Aided Design and analysis
           </p>
         </div>
       </div>
-    </>
+    </section>
   );
 };

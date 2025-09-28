@@ -11,12 +11,12 @@ export const Awards = () => {
       <h2 className={styles.title} id="Awards">Certifications and Recognitions</h2>
       <div className={styles.certificationContainer}>
         <div className={styles.certificationItem}>
-          <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
+          <h3>Microsoft Certified Azure Fundamentals - AZ900</h3>
           <p>Demonstrate foundational knowledge of cloud concepts, core Azure services, plus Azure management and governance features and tools.</p>
           <img src={az900} alt="azure certificate" className={styles.image} />
         </div>
         <div className={styles.certificationItem}>
-          <h3>Microsoft Certified: Power Platform Fundamentals (PL-900)</h3>
+          <h3>Power platform fundamentals - PL900</h3>
           <p>Demonstrate the business value and product capabilities of Microsoft Power Platform, such as Power Apps, data connections with Dataverse, and Power Automate.</p>
           <img src={pl900} alt="powerplatform certificate" className={styles.image} />
         </div>

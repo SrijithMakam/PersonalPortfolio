@@ -15,20 +15,20 @@ export const About = () => {
         />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
+            <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
             <div className={styles.aboutItemText}>
-              <h3>Cloud and DevOps Engineer</h3>
+              <h3>AI Full Stack Developer</h3>
               <p>
-                Proficient in Azure with experience in managing end-to-end cloud infrastructure and automation
+                Built robust web applications, with expertise in .Net, Angular and MERN stack, adept at implementing scalable and efficient solutions to meet project requirements.
               </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
+            <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
-              <h3>MERN Stack Developer</h3>
+              <h3>Cloud and DevOps Engineer</h3>
               <p>
-                Built robust web applications, with expertise in MongoDB, Express.js, React.js, and Node.js, adept at implementing scalable and efficient solutions to meet project requirements.
+                Proficient in Azure and AWS with experience in managing end-to-end cloud infrastructure and automation
               </p>
             </div>
           </li>

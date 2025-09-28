@@ -1,26 +1,54 @@
 import React from "react";
 
 import styles from "./Experience.module.css";
-import skills from "../../data/skills.json";
 import history from "../../data/history.json";
 import { getImageUrl } from "../../utils";
 
 export const Experience = () => {
+  const skillsData = [
+    {
+      category: "Languages",
+      skills: ["Java", "C#", "Python", "SQL", "JavaScript", "TypeScript"]
+    },
+    {
+      category: "Frontend",
+      skills: ["ReactJS", "Redux", "AngularJS", "HTML5", "CSS3", "SASS", "Kendo UI", "Material UI", "Figma"]
+    },
+    {
+      category: "Backend",
+      skills: ["Node.js", "Express.js", "Django", "REST APIs", ".Net Core", "MVC"]
+    },
+    {
+      category: "Databases",
+      skills: ["Oracle Database", "MS SQL Server", "MySQL", "PostgreSQL", "MongoDB", "Redis"]
+    },
+    {
+      category: "Cloud & DevOps",
+      skills: ["AWS", "Azure", "Azure DevOps", "GitHub Actions", "Terraform", "Docker", "Kubernetes", "Jenkins", "CI/CD", "Dynatrace"]
+    },
+    {
+      category: "Tools and Platforms",
+      skills: ["GitHub", "Git", "Postman", "Swagger", "MS Test", "Cypress", "PowerShell", "Linux/Unix", "VS Code", "GitHub Copilot"]
+    }
+  ];
+
   return (
     <section className={styles.container} id="experience">
-      <h2 className={styles.title}>Skills & Experience</h2>
+      <h2 className={styles.title}>Technical Skills & Experience</h2>
       <div className={styles.content}>
-        <div className={styles.skills}>
-          {skills.map((skill, id) => {
-            return (
-              <div key={id} className={styles.skill}>
-                <div className={styles.skillImageContainer}>
-                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
+        <div className={styles.skillsSection}>
+          <div className={styles.skillsTable}>
+            {skillsData.map((skillCategory, id) => (
+              <div key={id} className={styles.skillRow}>
+                <div className={styles.skillCategory}>
+                  {skillCategory.category}
                 </div>
-                <p>{skill.title}</p>
+                <div className={styles.skillList}>
+                  {skillCategory.skills.join(", ")}
+                </div>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
         <ul className={styles.history}>
           {history.map((historyItem, id) => {

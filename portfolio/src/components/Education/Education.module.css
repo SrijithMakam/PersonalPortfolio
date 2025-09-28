@@ -1,64 +1,125 @@
+@import "../../vars.css";
+
+.container {
+    color: var(--color-text);
+    margin-top: var(--section-spacing);
+    margin-left: var(--container-margin);
+    margin-right: var(--container-margin);
+}
+
+.title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-roboto);
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-lg);
+    line-height: var(--line-height-tight);
+}
+
 .education {
     color: var(--color-text);
-    margin-top: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-bottom: var(--spacing-lg);
     background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
-    border-radius: 20px;
-    padding: 40px;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-xl);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .education:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     cursor: pointer;
-}
-
-.heading {
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
-    color: var(--color-text);
-    margin-bottom: 5px;
-    margin-left: 10%;
-    margin-top: 79px;
 }
 
 .educationInfo {
     display: flex;
     flex-direction: column;
+    gap: var(--spacing-sm);
 }
 
 .flexContainer {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: var(--spacing-md);
 }
 
 .logo {
-    width: 100px;
-    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .degree {
-    font-size: 25px;
-    font-weight: bold;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-roboto);
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--spacing-xs);
 }
 
 .university {
-    font-size: 22px;
-    font-style: italic;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-regular);
+    font-family: var(--font-roboto);
+    line-height: var(--line-height-normal);
 }
 
 .gpa {
-    margin-top: 10px;
-    font-size: 20px;
-    font-style: italic;
+    margin-top: var(--spacing-sm);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    font-family: var(--font-roboto);
+    line-height: var(--line-height-normal);
 }
 
 .coursework {
-    font-size: 23px;
-    margin-top: 25px;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-regular);
+    font-family: var(--font-roboto);
+    margin-top: var(--spacing-md);
+    line-height: var(--line-height-loose);
+}
+
+.coursework strong {
+    font-weight: var(--font-weight-semibold);
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        margin-top: var(--section-spacing-mobile);
+        margin-left: var(--container-margin-mobile);
+        margin-right: var(--container-margin-mobile);
+    }
+    
+    .education {
+        padding: var(--spacing-md);
+    }
+    
+    .flexContainer {
+        gap: var(--spacing-sm);
+    }
+    
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .degree {
+        font-size: var(--font-size-sm);
+    }
+    
+    .university {
+        font-size: 16px;
+    }
+    
+    .gpa {
+        font-size: 16px;
+    }
+    
+    .coursework {
+        font-size: 16px;
+    }
 }

@@ -7,12 +7,11 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Srijith Makam</h1>
+        <h1 className={styles.title}>Hi, I'm Srijith D Makam</h1>
         <p className={styles.description}>
-        Dedicated Software Engineering Systems graduate student with nearly 3 years of hands-on experience in
-the software industry. Proficient in building, configuring, and testing software products, including SaaS, coupled
-with a relentless pursuit of continuous learning and excellent communication skills. Eager for dynamic
-opportunities in software development, driven by a passion for technology and fortified organizational skills.
+        Software Engineer with 3+ yrs experience building scalable distributed systems and high-performance applications.
+        Expert in full-stack development, cloud architecture, and DevOps automation with experience optimizing 
+        systems serving millions of users.Currently pursuing MS in Software Engineering at Northeastern University.
         </p>
         <a href="https://drive.google.com/file/d/1bJvUxugzWfJv20QbHlgjPzrgG2ObetG8/view" className={styles.contactBtn}>
           Resume

@@ -1,27 +1,90 @@
 @import "../../vars.css";
 
 .container {
-  margin-top: 76px;
+  margin-top: var(--section-spacing);
+  margin-left: var(--container-margin);
+  margin-right: var(--container-margin);
   color: var(--color-text);
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
-
 .title {
-  font-size: 35px;
-  font-weight: 700;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-roboto);
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--spacing-lg);
+  text-align: left;
 }
 
 .projects {
-  margin-top: 37px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+  margin-top: var(--spacing-xl);
+  display: grid;
+  gap: var(--spacing-lg);
   width: 100%;
+  justify-items: center;
+  align-items: start;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* Default: 1 column for small screens */
+  grid-template-columns: 1fr;
+}
+
+/* Medium screens: 2 columns */
+@media screen and (min-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+  }
+}
+
+/* Large screens: Optimized layout for exactly 5 cards */
+@media screen and (min-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+  
+  /* First two cards take 3 columns each (top row) */
+  .projects > :nth-child(1) {
+    grid-column: span 3;
+  }
+  
+  .projects > :nth-child(2) {
+    grid-column: span 3;
+  }
+  
+  /* Bottom three cards take 2 columns each */
+  .projects > :nth-child(3) {
+    grid-column: span 2;
+  }
+  
+  .projects > :nth-child(4) {
+    grid-column: span 2;
+  }
+  
+  .projects > :nth-child(5) {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    margin-top: var(--section-spacing-mobile);
+    margin-left: var(--container-margin-mobile);
+    margin-right: var(--container-margin-mobile);
+  }
+  
+  .projects {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .featuredProject {
+    grid-column: 1;
+  }
 }

@@ -9,12 +9,15 @@ export const Contact = () => {
       <div className={styles.text}>
         <h2>Contact</h2>
         <p>Feel free to reach out!</p>
-        <p>+1(857)-465-9357</p>
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
+          <img src={getImageUrl("contact/call.png")} alt="Phone icon" />
+          <a href="tel:+18574659357">+1 (857) 465-9357</a>
+        </li>
+        <li className={styles.link}>
           <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="makam.s@northeastern.edu">makam.s@northeastern.edu</a>
+          <a href="mailto:makam.s@northeastern.edu">makam.s@northeastern.edu</a>
         </li>
         <li className={styles.link}>
           <img

@@ -3,48 +3,52 @@
 .container {
   position: relative;
   background-color: rgba(12, 12, 12, 0.6);
-  border-radius: 15px;
-  padding: 73px;
-  margin-top: 130px;
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-xxl);
+  margin-top: var(--section-spacing);
+  margin-left: var(--container-margin);
+  margin-right: var(--container-margin);
   z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .title {
   color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-roboto);
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--spacing-lg);
 }
 
 .content {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: var(--spacing-xl);
 }
 
 .aboutImage {
   width: 35%;
   border-radius: 30px;
-  padding: 10px;
+  padding: var(--spacing-xs);
 }
 
 .aboutItems {
   color: var(--color-text);
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: var(--spacing-xxl);
 }
 
 .aboutItem {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   list-style: none;
-  padding: 25px;
+  padding: var(--spacing-md);
   background-image: linear-gradient(
     90deg,
     rgba(165, 215, 232, 0.42) 0%,
@@ -52,20 +56,33 @@
   );
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: 0.4s;
+  transition: all 0.4s ease;
 }
 
 .aboutItem:hover {
   background-size: 100% 100%;
+  transform: translateX(5px);
 }
 
-.aboutItem h3 {
-  font-size: 25px;
-  font-weight: 600;
+.aboutItem img {
+  width: 60px;
+  height: 60px;
+  margin-right: var(--spacing-md);
 }
 
-.aboutItem p {
-  font-size: 25px;
+.aboutItemText h3 {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-roboto);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--spacing-xs);
+}
+
+.aboutItemText p {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-roboto);
+  line-height: var(--line-height-normal);
 }
 
 @media screen and (max-width: 830px) {
@@ -73,10 +90,14 @@
     background-color: transparent;
     padding-left: 0;
     padding-right: 0;
+    margin-top: var(--section-spacing-mobile);
+    margin-left: var(--container-margin-mobile);
+    margin-right: var(--container-margin-mobile);
   }
 
   .content {
     flex-direction: column;
+    gap: var(--spacing-lg);
   }
 
   .aboutImage {
@@ -84,11 +105,20 @@
   }
 
   .aboutItems {
-    margin-top: 29px;
+    margin-top: var(--spacing-lg);
+    gap: var(--spacing-lg);
   }
 
   .aboutItem {
     padding-left: 0;
     padding-right: 0;
+  }
+  
+  .aboutItemText h3 {
+    font-size: 22px;
+  }
+  
+  .aboutItemText p {
+    font-size: var(--font-size-xs);
   }
 }

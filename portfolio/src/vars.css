@@ -7,5 +7,41 @@
     --color-bg: #04152d;
   
     /* Fonts */
-    --font-roboto: "Roboto";
-  }
+    --font-roboto: "Roboto", Arial, sans-serif;
+    
+    /* Typography Scale */
+    --font-size-xl: 50px;        /* Hero titles */
+    --font-size-lg: 35px;        /* Section titles */
+    --font-size-md: 25px;        /* Subheadings */
+    --font-size-sm: 20px;        /* Body text */
+    --font-size-xs: 18px;        /* Small text */
+    
+    /* Font Weights */
+    --font-weight-black: 900;
+    --font-weight-bold: 700;
+    --font-weight-semibold: 600;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+    
+    /* Spacing Scale */
+    --spacing-xs: 10px;
+    --spacing-sm: 15px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+    --spacing-xl: 40px;
+    --spacing-xxl: 50px;
+    
+    /* Layout */
+    --container-margin: 10%;
+    --container-margin-mobile: 5%;
+    --section-spacing: 80px;        /* Consistent spacing between sections */
+    --section-spacing-mobile: 60px; /* Mobile spacing between sections */
+    --border-radius: 20px;
+    --border-radius-sm: 15px;
+    
+    /* Line Heights */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-loose: 1.6;
+}
